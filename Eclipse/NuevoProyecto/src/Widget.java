@@ -1,0 +1,5 @@
+
+class Widget {
+	int x;
+
+}

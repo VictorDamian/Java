@@ -1,0 +1,23 @@
+//Tabla sucesion ackerman
+package ackerman;
+
+public class ackerman {	
+	public static int ackerman(int m, int n){
+		if(m==0)
+			return n+1;
+		if(n==0)
+			return ackerman(m-1,1);
+		else
+			return ackerman (m-1, ackerman(m, n-1));
+	}
+	public static void main(String[] args){
+		
+		
+		for (int i = 0; i < 4; i++) {
+			for(int j=0; j<9; j++) {
+				System.out.print("|" + ackerman(i,j) + "\t");
+			}
+			System.out.println();
+		}
+	}
+}
